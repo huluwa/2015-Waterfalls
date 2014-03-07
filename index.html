@@ -1,0 +1,197 @@
+﻿<!doctype html>
+<!--
+Design by Free Responsive Templates
+http://www.free-responsive-templates.com
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+Coder: lsa, free.responsive.templates@gmail.com
+Created: 11 September 2012 
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>瀑布流</title>
+<link href='http://fonts.googleapis.com/css?family=Cutive' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Vast_Shadow' rel='stylesheet' type='text/css'>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>
+	 // DOM ready
+	 $(function() {
+	   
+      // Create the dropdown base
+      $("<select />").appendTo("nav");
+      
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Select a page"
+      }).appendTo("nav select");
+      
+      // Populate dropdown with menu items
+      $("nav a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav select");
+      });
+      
+	   // To make dropdown actually work
+      $("nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+	 
+	 });
+	</script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li class="active"><a href="">首页</a></li>
+        <li><a href="">详细</a></li>
+        <li><a href="">购买</a></li>
+        <li><a href="">评论</a></li>
+        <li><a href="">其他</a></li>
+    </ul>
+</nav>
+<h1><a href="">可爱小肉肉</a></h1>
+<div class="wrapper">
+	<div class="boxes">
+    <div class="box">
+    	<div class="picPreview"><a href="http://baike.baidu.com/link?url=OnGta8CG2yQQigzoL8IXabrSyMA-JdT_kIjLhByKdH629crqMcY9QFTGT__k477p6KUXCDKYUF2sRNuaB12VRq"><img src="images/hongzhiyu_1.jpg" alt="template21"></a></div>
+        <h2>FRT Mint</h2>
+        <p>虹之玉是景天科景天属的多肉植物、也称多浆植物，原产地是墨西哥，别称为耳坠草、玉米粒。</p>
+        <div class="templateLink"><a href="">虹之玉</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/xiezhua.jpg" alt="template20"></a></div>
+        <h2>Michael & Julia</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 20</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template19.jpg" alt="template19"></a></div>
+        <h2>Birchwood</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 19</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template18.jpg" alt="template18"></a></div>
+        <h2>Maestro</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 18</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template17.jpg" alt="template17"></a></div>
+        <h2>Leader Horse Club</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 17</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href="http://baike.baidu.com/link?url=o2xJb8EmWcYB1DliKEa6rVPQMJJlHzF7Kv_ON-9mpCbx4VXMAiU8Xm3y5EI216Tq"><img src="images/xiezhua.jpg" alt="template16"></a></div>
+        <h2>Portfolio</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 16</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href="http://baike.baidu.com/link?url=pqOT4M7e-IZNsYnbdDOIk8o7sRVXrrZjr1GZgectS6KkV2SnzTEEsjs_LnW3f38Z"><img src="images/yuzhulian.jpg" alt="template15"></a></div>
+        <h2>Miami</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 15</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template14.jpg" alt="template14"></a></div>
+        <h2>Yacht’s Florida</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 14</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template13.jpg" alt="template13"></a></div>
+        <h2>Children's Castle</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 13</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template12.jpg" alt="template12"></a></div>
+        <h2>Corn Food</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 12</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href="http://baike.baidu.com/link?url=ueoYfZ9v278jwYTtwyw26D8bRZtifG34a5GKqRhXxrdrhLl3f9_v2_ipymdssSWG"><img src="images/jinyuhua.jpg" alt="template11"></a></div>
+        <h2>Abc</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 11</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template10.jpg" alt="template10"></a></div>
+        <h2>Lage Palm</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 10</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template9.jpg" alt="template9"></a></div>
+        <h2>Zoo Co</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 9</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template8.jpg" alt="template8"></a></div>
+        <h2>frt _WheatField</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 8</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template7.jpg" alt="template7"></a></div>
+        <h2>frt_Auroch</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 7</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template6.jpg" alt="template6"></a></div>
+        <h2>Snail on the rain</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 6</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href="http://baike.baidu.com/subview/1069742/7550971.htm?fr=aladdin"><img src="images/huangli.jpg" alt="template5"></a></div>
+        <h2>Wood Selling Co</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 5</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template4.jpg" alt="template4"></a></div>
+        <h2>Quality Co</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 4</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template3.jpg" alt="template3"></a></div>
+        <h2>Flowers</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 3</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template2.jpg" alt="template2"></a></div>
+        <h2>Cooking School</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 2</a></div>
+    </div>
+    <div class="box">
+    	<div class="picPreview"><a href=""><img src="images/template1.jpg" alt="template1"></a></div>
+        <h2>Woman’s Laptop</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+        <div class="templateLink"><a href="">template 1</a></div>
+    </div>
+    </div>
+    <div class="clearfloat"></div>
+</div>
+<footer> 
+    <p>
+        Copyright &copy; <a href="#">Your Site Name</a> | Collect Form <a href="http://www.cssmoban.com/" title="网页模板">网页模板</a>
+    </p>
+</footer>
+</body>
+</html>
